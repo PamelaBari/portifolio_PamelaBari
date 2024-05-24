@@ -1,16 +1,16 @@
-# Portfólio Olá, Bem vindo ao meu projeto de portfólio.
+# Olá, Bem vindo ao meu projeto de portfólio.
 
 <img src="assets/inicio.png" alt="Tela Inicial do Portifólio">
 
 ## Ferramentas utilizadas:
 
-* HTML
+* HTML;
 
-* CSS
+* CSS;
 
-* Flex-box
+* Flex-box;
 
-* PHP em aprimoramento
+* PHP - em aprimoramento;
 
 ## Feito por:
 
