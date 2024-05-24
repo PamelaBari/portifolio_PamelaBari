@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao,.about, .about__2, .curriculo, .contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo,.about__conteudo, .about__2__conteudo, .curriculo__conteudo, .contato__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;    
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+

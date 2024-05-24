@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria:#FFFFFF;
+    --cor-terciaria: #D2B48C;
+    --fonte-principal: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/assets/fundo.tela.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: var(--cor-secundaria); 
+    height: 100%;
+}
+
+/* CABEÇALHO */
+
+.cabecalho__container {
+    background-color: var(--cor-primaria);
+    border-bottom: 0.0625rem solid var(--cor-terciaria);
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.titulo__portifolio {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: typing 3s steps(40, end) 5s infinite normal both;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0% }
+    to { width: 10% }
+}
+
+strong {
+    color:var(--cor-terciaria);
+}
+
+.cabecalho__menu {
+    list-style-type: none; 
+    white-space: nowrap;
+}
+
+.cabecalho__menu__link {
+    font-size: 1rem;
+    margin-right: 2.5rem;
+    color:var(--cor-terciaria);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho__menu__link:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* CONTEÚDO */
+
+.apresentacao,.about,.about__2, .curriculo, .contato {
+    margin: 10% 10% 1% 10%;
+}
+
+.apresentacao__conteudo,.about__conteudo, .about__2__conteudo, .curriculo__conteudo, .contato__conteudo {
+    width: 50%;
+}
+
+.apresentacao__conteudo__titulo,.about__conteudo__titulo, .curriculo__conteudo__titulo, .contato__conteudo__titulo, .about__2__conteudo__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    margin-top: 0;
+}
+
+.apresentacao__conteudo__titulo__texto, .about__conteudo__titulo__texto, .about__2__conteudo__titulo__texto, .curriculo__conteudo__titulo__texto {
+    font-size: 1.1rem;
+    font-family: var(--fonte-principal);
+}
+
+/* CONTATOS*/
+
+.contato__conteudo, .curriculo__conteudo {
+    font-size: 1.1rem;
+    font-family: var(--fonte-principal);
+    background-color: rgb(0, 0, 0);
+    margin: 1em 0;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #D2B48C;
+}
+
+.contato__conteudo, .curriculo__conteudo::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+label {
+    margin-top: 1em;
+    color: #ffffff;
+}
+
+input, textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #000000;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.7em;
+    border: none;
+    border-radius: 3px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-terciaria);
+}
+
+/* LINKS */
+
+.apresentacao__links__navegacao {
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+
+.apresentacao__links__navegacao:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.curriculo__links__logos:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.apresentacao__links__navegacao__logos {
+    width: 3rem;
+    height: 3rem;
+    padding: 0rem;
+}
+
+.curriculo__links__logos {
+    width: 4rem;
+    padding: 0% 0% 0% 45%;
+}
+
+
+/* IMAGENS */
+
+.apresentacao__imagem, .about__imagem, .conquistas__imagem {
+    width: 20rem;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.titulo-destaque {
+    color:var(--cor-terciaria);
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+
+footer.rodape {
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao, .about {
+        flex-direction: column-reverse;
+        margin: 25% 10%; 
+    }
+
+    .apresentacao__imagem, .about__imagem, .conquistas__imagem {
+        width: 100%;
+    }
+
+    .apresentacao__conteudo,.about__conteudo, .conquistas__conteudo {
+        width: auto;
+    }
+}
+
